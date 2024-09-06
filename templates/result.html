@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Submitted</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Submitted Information</h1>
+        <p><strong>Name:</strong> {{ name }}</p>
+        <p><strong>Email:</strong> {{ email }}</p>
+        <p><strong>Age:</strong> {{ age }}</p>
+        <p><strong>Comments:</strong> {{ comments }}</p>
+
+        <h2>Download Your Information</h2>
+        <form action="/download" method="POST">
+            <input type="hidden" name="name" value="{{ name }}">
+            <input type="hidden" name="email" value="{{ email }}">
+            <input type="hidden" name="age" value="{{ age }}">
+            <input type="hidden" name="comments" value="{{ comments }}">
+            <button type="submit">Download Details as Text File</button>
+        </form>
+    </div>
+</body>
+</html>
+

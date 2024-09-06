@@ -1,14 +1,10 @@
-# Project Name
+# AWS Jenkins CI/CD Pipeline Integration
 
 ## Description
 
-A brief description of what your project does and its purpose. Mention any key features or functionalities.
+This project sets up a CI/CD pipeline using Jenkins, Docker, and AWS services to automate the deployment of a Dockerized application. The pipeline performs tasks such as logging into AWS ECR, checking out code, building Docker images, pushing them to ECR, updating ECS task definitions, and deploying to ECS.
 
-## Features
 
-- Feature 1
-- Feature 2
-- Feature 3
 
 ## Getting Started
 
@@ -16,10 +12,13 @@ A brief description of what your project does and its purpose. Mention any key f
 
 List any prerequisites needed to run the project, such as software or libraries. For example:
 
-- Docker
-- Jenkins
-- AWS CLI
+- Docker: For containerizing your application.
+- Jenkins: For automating the CI/CD pipeline.
+- AWS CLI: For interacting with AWS services.
+- Git: For cloning the repository.
+- Java: Required for running Jenkins.
 
+  
 ### Installation
 
 1. Clone the repository:
@@ -36,14 +35,8 @@ List any prerequisites needed to run the project, such as software or libraries.
 
 ## Usage
 
-Provide instructions and examples for how to use the project. For example:
-
-1. Start the Docker container:
-    ```bash
-    docker-compose up
-    ```
-
-2. Access the application at `http://localhost:8080`.
+Provide instructions 
+1. Access the application at `http://localhost:5000`.
 
 ## CI/CD Pipeline
 
@@ -56,24 +49,3 @@ Describe the CI/CD pipeline setup and steps involved. For example:
 5. Update ECS Task Definition
 6. Deploy to ECS
 
-## Contributing
-
-If you'd like others to contribute to your project, provide guidelines here. For example:
-
-1. Fork the repository
-2. Create a new branch
-3. Make your changes
-4. Submit a pull request
-
-## License
-
-Include the license information for your project. For example:
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-Provide contact information or links for further inquiries or support.
-
-- Email: your-email@example.com
-- GitHub: [your-username](https://github.com/your-username)

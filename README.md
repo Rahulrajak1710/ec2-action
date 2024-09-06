@@ -31,13 +31,40 @@ List any prerequisites needed to run the project, such as software or libraries.
     cd your-repo
     ```
 
-3. Follow any specific setup instructions, such as installing dependencies or setting up environment variables.
+3. Set Up Jenkins:
+   - Install Jenkins following the official documentation.
+   - Install necessary Jenkins plugins, including the AWS CLI, Docker, and Git plugins.
+
+4. Install Docker
+ -  Docker installation guide suitable for your operating system.
+
+5. Configure AWS CLI
+    ```bash
+    aws configure
+    ```
 
 ## Usage
 
-Provide instructions 
-1. Access the application at `http://localhost:5000`.
+Running the Application Locally
+1. Build Docker Image:
+  ```bash
+    docker build -t your-app-name .
 
+  ```
+
+3. Run Docker Container
+  ```bash
+    aws configure
+   ```
+5. Access the Application
+  ```bash
+    docker run -p 5000:5000 your-app-name
+
+  ```
+## Running the CI/CD Pipeline
+
+1. Access Jenkins:Open Jenkins in your browser and create a new pipeline job.
+2. Configure Pipeline :Set up Jenkins credentials for AWS and Docker.Define the pipeline script (Jenkinsfile) to automate the CI/CD process.
 ## CI/CD Pipeline
 
 Describe the CI/CD pipeline setup and steps involved. For example:
@@ -49,3 +76,8 @@ Describe the CI/CD pipeline setup and steps involved. For example:
 5. Update ECS Task Definition
 6. Deploy to ECS
 
+## Troubleshooting
+- Pipeline Fails: Check Jenkins logs for errors and ensure all required plugins and configurations are correct.
+- Docker Build Issues: Verify your Dockerfile and build context.
+
+- AWS Permissions: Ensure your AWS credentials have the necessary permissions for ECR and ECS operations

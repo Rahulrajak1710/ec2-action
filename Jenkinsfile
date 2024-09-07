@@ -6,9 +6,9 @@ pipeline {
         IMAGE_REPO_NAME = "oriserve"
         IMAGE_TAG = "latest"
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
-        CLUSTER_NAME = "oriserve"  // Replace with your ECS cluster name
-        SERVICE_NAME = "oriserveService1"  // Replace with your ECS service name
-        TASK_DEFINITION_NAME = "oriserveTaskDefinition" // Replace with your ECS task definition name
+        CLUSTER_NAME = "oriserve"  
+        SERVICE_NAME = "oriserveService1"  
+        TASK_DEFINITION_NAME = "oriserveTaskDefinition" 
     }
 
     stages {

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+mkdir -p projects
+
+mkdir -p projects/facebook
+mkdir -p projects/google/oriserve
+mkdir -p projects/meta/oriserve
+mkdir -p projects/oracle

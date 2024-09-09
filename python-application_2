@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+find projects -type d -name "oriserve" | while read dir; do
+
+  touch "$dir/test.txt"
+done
+
